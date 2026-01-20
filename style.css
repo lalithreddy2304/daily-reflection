@@ -1,0 +1,84 @@
+:root {
+  --bg: #0f1115;
+  --card: #1a1c22;
+  --text: #e6e6e6;
+  --muted: #a0a0a0;
+  --accent: #4caf50;
+}
+
+body.light {
+  --bg: #f4f4f4;
+  --card: #ffffff;
+  --text: #111;
+  --muted: #555;
+  --accent: #2e7d32;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 650px;
+  margin: auto;
+}
+
+.description {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 6px;
+}
+
+textarea,
+input[type="text"] {
+  width: 100%;
+  background: var(--card);
+  color: var(--text);
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+button {
+  margin-top: 16px;
+  padding: 10px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.entry {
+  background: var(--card);
+  padding: 14px;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+.counter {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--muted);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}

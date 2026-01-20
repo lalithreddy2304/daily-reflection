@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Reflection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button id="themeToggle" class="theme-toggle">Switch theme</button>
+
+<main class="container">
+  <h1>Daily Reflection</h1>
+  <p class="description">
+    A simple space to reflect on your day.
+  </p>
+
+  <form id="reflectionForm">
+    <label>What did you study today?</label>
+    <textarea id="studyInput" rows="3"></textarea>
+    <div class="counter" id="studyCount">0 characters</div>
+
+    <label>What distracted you?</label>
+    <textarea id="distractionInput" rows="2"></textarea>
+    <div class="counter" id="distractionCount">0 characters</div>
+
+    <label>How did the day feel?</label>
+    <input type="text" id="feelingInput" placeholder="e.g. calm, rushed, tired">
+
+    <button type="submit">Save entry</button>
+  </form>
+
+  <section>
+    <h2>Entries</h2>
+    <div id="entries"></div>
+  </section>
+
+</main>
+
+<script src="first.js"></script>
+</body>
+</html>
